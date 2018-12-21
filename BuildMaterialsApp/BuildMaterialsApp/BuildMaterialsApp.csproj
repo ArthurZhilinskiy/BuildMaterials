@@ -103,6 +103,12 @@
     <Compile Include="NewProductControl.Designer.cs">
       <DependentUpon>NewProductControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersControl.Designer.cs">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegForm.cs">
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewProductControl.resx">
       <DependentUpon>NewProductControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersControl.resx">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

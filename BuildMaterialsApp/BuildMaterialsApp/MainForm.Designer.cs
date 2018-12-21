@@ -240,6 +240,7 @@
             this.btnBacket.Text = "Мои заказы";
             this.btnBacket.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBacket.UseSelectable = true;
+            this.btnBacket.Click += new System.EventHandler(this.btnBacket_Click);
             // 
             // metroTextBox1
             // 
@@ -334,8 +335,8 @@
         private MetroFramework.Controls.MetroPanel metroPanel2;
         private MetroFramework.Controls.MetroButton btnBacket;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroLabel mLogin_User;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroButton btnAdminPanel;
+        public MetroFramework.Controls.MetroLabel mLogin_User;
     }
 }

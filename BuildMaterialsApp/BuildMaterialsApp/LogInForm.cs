@@ -22,6 +22,7 @@ namespace BuildMaterialsApp
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+
             OleDbConnection connection = new OleDbConnection(connstring);
             try
             {
@@ -43,12 +44,12 @@ namespace BuildMaterialsApp
                     if (metroToggle1.Checked == true)
                     {
                         
-                        MainForm mainForm = new MainForm(reader["Login_Admin"].ToString(), true);
+                        MainForm mainForm = new MainForm(reader["ID_Admin"].ToString(), reader["Login_Admin"].ToString(), true);
                         mainForm.Show();
                     }
                     else
                     {
-                        MainForm mainForm = new MainForm(reader["Login_User"].ToString());
+                        MainForm mainForm = new MainForm(reader["ID_User"].ToString(), reader["Login_User"].ToString());
                         mainForm.Show();
                     }
                 }

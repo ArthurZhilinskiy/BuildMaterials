@@ -87,7 +87,6 @@
             this.tbDescription.UseSelectable = true;
             this.tbDescription.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tbDescription.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.tbDescription.Click += new System.EventHandler(this.metroTextBox1_Click);
             // 
             // metroLabel1
             // 
@@ -111,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 478);
+            this.ClientSize = new System.Drawing.Size(289, 496);
             this.Controls.Add(this.pbImage);
             this.Controls.Add(this.tbDescription);
             this.Controls.Add(this.lCountry);
@@ -120,7 +119,6 @@
             this.MaximizeBox = false;
             this.Name = "MoreInfoProductForm";
             this.Resizable = false;
-            this.Load += new System.EventHandler(this.MoreInfoProductForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace BuildMaterialsApp
 {
     public partial class MoreInfoProductForm : MetroFramework.Forms.MetroForm
     {
+        string connstring = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + @"\BuildDB.mdb";
+        public int ID_User { get; set; }
         public MoreInfoProductForm()
         {
             InitializeComponent();
@@ -25,14 +28,9 @@ namespace BuildMaterialsApp
             this.tbDescription.Text = description;
         }
 
-        private void MoreInfoProductForm_Load(object sender, EventArgs e)
+        private void btnByProduct_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
+          
         }
     }
 }

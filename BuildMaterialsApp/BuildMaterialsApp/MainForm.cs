@@ -15,18 +15,19 @@ namespace BuildMaterialsApp
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
         string connstring = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + @"\BuildDB.mdb";
-
+        public string ID { get; set; }
         public MainForm()
         {
             InitializeComponent();
         }
-        public MainForm(string Login_User)
+        public MainForm(string ID,string Login_User)
         {
             InitializeComponent();
             mLogin_User.Text = Login_User;
+            this.ID = ID;
         }
 
-        public MainForm(string Login_User, bool isAdmin)
+        public MainForm(string ID, string Login_User, bool isAdmin)
         {
             InitializeComponent();
             mLogin_User.Text = Login_User;
@@ -63,7 +64,7 @@ namespace BuildMaterialsApp
                     metroLink.Theme = MetroFramework.MetroThemeStyle.Dark;
                 }
             }
-
+            this.ID = ID;
         }
 
         public void GetDataFromCategories(string cmdText)
@@ -85,7 +86,7 @@ namespace BuildMaterialsApp
                                            reader["Product_count"].ToString(),
                                            reader["Product_description"].ToString(),
                                            reader["Product_country"].ToString(),
-                                           image );
+                                           image, this );
                     memoryStream.Dispose();
                     flowLayoutPanel1.Controls.Add(cart);
                 }
@@ -159,6 +160,13 @@ namespace BuildMaterialsApp
         private void metroTextBox1_TextChanged(object sender, EventArgs e)
         {
             GetDataFromCategories("SELECT * FROM Products WHERE Product_name LIKE '%"+metroTextBox1.Text+"%'");
+        }
+
+        private void btnBacket_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            OrdersControl ordersControl = new OrdersControl();
+            flowLayoutPanel1.Controls.Add(ordersControl);
         }
     }
 }
