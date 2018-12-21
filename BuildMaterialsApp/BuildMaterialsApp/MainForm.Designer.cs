@@ -333,10 +333,10 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroButton btnBacket;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroButton btnAdminPanel;
         public MetroFramework.Controls.MetroLabel mLogin_User;
+        public MetroFramework.Controls.MetroButton btnBacket;
     }
 }

@@ -106,7 +106,7 @@
             this.mtbPassword.Location = new System.Drawing.Point(86, 184);
             this.mtbPassword.MaxLength = 32767;
             this.mtbPassword.Name = "mtbPassword";
-            this.mtbPassword.PasswordChar = '\0';
+            this.mtbPassword.PasswordChar = '●';
             this.mtbPassword.PromptText = "user_password";
             this.mtbPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.mtbPassword.SelectedText = "";
@@ -114,8 +114,9 @@
             this.mtbPassword.SelectionStart = 0;
             this.mtbPassword.ShortcutsEnabled = true;
             this.mtbPassword.Size = new System.Drawing.Size(158, 23);
-            this.mtbPassword.TabIndex = 1;
+            this.mtbPassword.TabIndex = 2;
             this.mtbPassword.UseSelectable = true;
+            this.mtbPassword.UseSystemPasswordChar = true;
             this.mtbPassword.WaterMark = "user_password";
             this.mtbPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mtbPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -125,7 +126,7 @@
             this.metroButton1.Location = new System.Drawing.Point(169, 328);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 2;
+            this.metroButton1.TabIndex = 5;
             this.metroButton1.Text = "Войти";
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
@@ -135,7 +136,7 @@
             this.metroButton2.Location = new System.Drawing.Point(23, 328);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(93, 23);
-            this.metroButton2.TabIndex = 2;
+            this.metroButton2.TabIndex = 4;
             this.metroButton2.Text = "Регистрация";
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);

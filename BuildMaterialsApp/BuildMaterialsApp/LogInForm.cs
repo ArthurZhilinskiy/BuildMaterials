@@ -39,18 +39,26 @@ namespace BuildMaterialsApp
                 OleDbCommand command = new OleDbCommand(cmdText, connection);
                 OleDbDataReader reader;
                 reader = command.ExecuteReader();
+                if (!reader.HasRows)
+                {
+                    mtbLogin.WithError = true;
+                    mtbPassword.WithError = true;
+                }
                 while (reader.Read())
                 {
                     if (metroToggle1.Checked == true)
                     {
                         
                         MainForm mainForm = new MainForm(reader["ID_Admin"].ToString(), reader["Login_Admin"].ToString(), true);
+                        mainForm.btnBacket.Visible = false;
                         mainForm.Show();
+                       
                     }
                     else
                     {
                         MainForm mainForm = new MainForm(reader["ID_User"].ToString(), reader["Login_User"].ToString());
                         mainForm.Show();
+                        
                     }
                 }
             }

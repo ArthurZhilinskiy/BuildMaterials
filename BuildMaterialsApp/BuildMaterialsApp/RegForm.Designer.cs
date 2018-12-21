@@ -90,7 +90,7 @@
             this.mtbLogin.SelectionStart = 0;
             this.mtbLogin.ShortcutsEnabled = true;
             this.mtbLogin.Size = new System.Drawing.Size(134, 23);
-            this.mtbLogin.TabIndex = 1;
+            this.mtbLogin.TabIndex = 0;
             this.mtbLogin.UseSelectable = true;
             this.mtbLogin.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mtbLogin.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -113,7 +113,7 @@
             this.mtbPassword.Location = new System.Drawing.Point(86, 160);
             this.mtbPassword.MaxLength = 32767;
             this.mtbPassword.Name = "mtbPassword";
-            this.mtbPassword.PasswordChar = '\0';
+            this.mtbPassword.PasswordChar = '●';
             this.mtbPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.mtbPassword.SelectedText = "";
             this.mtbPassword.SelectionLength = 0;
@@ -122,6 +122,7 @@
             this.mtbPassword.Size = new System.Drawing.Size(134, 23);
             this.mtbPassword.TabIndex = 1;
             this.mtbPassword.UseSelectable = true;
+            this.mtbPassword.UseSystemPasswordChar = true;
             this.mtbPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mtbPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -150,7 +151,7 @@
             this.mtbE_mail.SelectionStart = 0;
             this.mtbE_mail.ShortcutsEnabled = true;
             this.mtbE_mail.Size = new System.Drawing.Size(134, 23);
-            this.mtbE_mail.TabIndex = 1;
+            this.mtbE_mail.TabIndex = 2;
             this.mtbE_mail.UseSelectable = true;
             this.mtbE_mail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mtbE_mail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -160,7 +161,7 @@
             this.metroButton1.Location = new System.Drawing.Point(136, 326);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(84, 23);
-            this.metroButton1.TabIndex = 2;
+            this.metroButton1.TabIndex = 4;
             this.metroButton1.Text = "Подтвердить";
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
@@ -170,9 +171,10 @@
             this.metroButton2.Location = new System.Drawing.Point(25, 326);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(84, 23);
-            this.metroButton2.TabIndex = 2;
+            this.metroButton2.TabIndex = 3;
             this.metroButton2.Text = "Отмена";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // RegForm
             // 
