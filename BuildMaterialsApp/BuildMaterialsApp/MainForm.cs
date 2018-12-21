@@ -165,7 +165,7 @@ namespace BuildMaterialsApp
         private void btnBacket_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            OrdersControl ordersControl = new OrdersControl();
+            OrdersControl ordersControl = new OrdersControl(this);
             flowLayoutPanel1.Controls.Add(ordersControl);
         }
     }
