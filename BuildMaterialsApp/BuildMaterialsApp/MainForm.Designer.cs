@@ -237,7 +237,7 @@
             this.btnBacket.Name = "btnBacket";
             this.btnBacket.Size = new System.Drawing.Size(73, 23);
             this.btnBacket.TabIndex = 3;
-            this.btnBacket.Text = "Корзина 0";
+            this.btnBacket.Text = "Мои заказы";
             this.btnBacket.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBacket.UseSelectable = true;
             // 
@@ -272,12 +272,13 @@
             this.metroTextBox1.WaterMark = "Введите название товара для поиска";
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.metroTextBox1.TextChanged += new System.EventHandler(this.metroTextBox1_TextChanged);
             // 
             // mLogin_User
             // 
             this.mLogin_User.AutoSize = true;
             this.mLogin_User.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.mLogin_User.Location = new System.Drawing.Point(688, 45);
+            this.mLogin_User.Location = new System.Drawing.Point(723, 45);
             this.mLogin_User.Name = "mLogin_User";
             this.mLogin_User.Size = new System.Drawing.Size(62, 15);
             this.mLogin_User.TabIndex = 4;
@@ -287,7 +288,7 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel3.Location = new System.Drawing.Point(574, 45);
+            this.metroLabel3.Location = new System.Drawing.Point(598, 45);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(108, 15);
             this.metroLabel3.TabIndex = 4;
@@ -303,6 +304,7 @@
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.metroPanel1);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;

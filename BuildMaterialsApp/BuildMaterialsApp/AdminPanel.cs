@@ -37,5 +37,12 @@ namespace BuildMaterialsApp
             ChangeProductsControl newchangeProductsControl = new ChangeProductsControl();
             flowLayoutPanel1.Controls.Add(newchangeProductsControl);
         }
+
+        private void btnRemoveProduct_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            RemoveProductControl newRemoveProductsControl = new RemoveProductControl();
+            flowLayoutPanel1.Controls.Add(newRemoveProductsControl);
+        }
     }
 }

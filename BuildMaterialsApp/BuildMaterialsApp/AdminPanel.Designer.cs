@@ -97,6 +97,7 @@
             this.btnRemoveProduct.Text = "Удалить товар";
             this.btnRemoveProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnRemoveProduct.UseSelectable = true;
+            this.btnRemoveProduct.Click += new System.EventHandler(this.btnRemoveProduct_Click);
             // 
             // btnAddNewProduct
             // 

@@ -44,7 +44,7 @@
             // 
             this.pbImageProduct.Location = new System.Drawing.Point(3, 3);
             this.pbImageProduct.Name = "pbImageProduct";
-            this.pbImageProduct.Size = new System.Drawing.Size(184, 97);
+            this.pbImageProduct.Size = new System.Drawing.Size(184, 122);
             this.pbImageProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImageProduct.TabIndex = 0;
             this.pbImageProduct.TabStop = false;
@@ -53,7 +53,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel2.Location = new System.Drawing.Point(3, 122);
+            this.metroLabel2.Location = new System.Drawing.Point(3, 147);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(61, 15);
             this.metroLabel2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 103);
+            this.metroLabel1.Location = new System.Drawing.Point(3, 128);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(61, 15);
             this.metroLabel1.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             this.lCountProduct.AutoSize = true;
             this.lCountProduct.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.lCountProduct.Location = new System.Drawing.Point(70, 122);
+            this.lCountProduct.Location = new System.Drawing.Point(70, 147);
             this.lCountProduct.Name = "lCountProduct";
             this.lCountProduct.Size = new System.Drawing.Size(23, 15);
             this.lCountProduct.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel4.Location = new System.Drawing.Point(3, 142);
+            this.metroLabel4.Location = new System.Drawing.Point(3, 167);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(47, 15);
             this.metroLabel4.TabIndex = 1;
@@ -93,7 +93,7 @@
             // 
             this.lCountryProduct.AutoSize = true;
             this.lCountryProduct.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.lCountryProduct.Location = new System.Drawing.Point(70, 142);
+            this.lCountryProduct.Location = new System.Drawing.Point(70, 167);
             this.lCountryProduct.Name = "lCountryProduct";
             this.lCountryProduct.Size = new System.Drawing.Size(59, 15);
             this.lCountryProduct.TabIndex = 1;
@@ -103,7 +103,7 @@
             // 
             this.lNameProduct.AutoSize = true;
             this.lNameProduct.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.lNameProduct.Location = new System.Drawing.Point(68, 103);
+            this.lNameProduct.Location = new System.Drawing.Point(68, 128);
             this.lNameProduct.Name = "lNameProduct";
             this.lNameProduct.Size = new System.Drawing.Size(71, 15);
             this.lNameProduct.TabIndex = 1;
@@ -126,6 +126,7 @@
             this.metroButton2.TabIndex = 2;
             this.metroButton2.Text = "Подробнее";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click_1);
             // 
             // Carts
             // 

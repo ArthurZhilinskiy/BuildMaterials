@@ -155,5 +155,10 @@ namespace BuildMaterialsApp
         {
             GetDataFromCategories("SELECT * FROM Products WHERE Product_cutegory = 'Канализация'");
         }
+
+        private void metroTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            GetDataFromCategories("SELECT * FROM Products WHERE Product_name LIKE '%"+metroTextBox1.Text+"%'");
+        }
     }
 }
