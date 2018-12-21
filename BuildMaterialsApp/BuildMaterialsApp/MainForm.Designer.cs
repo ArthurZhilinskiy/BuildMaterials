@@ -42,11 +42,11 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.btnAdminPanel = new MetroFramework.Controls.MetroButton();
             this.btnBacket = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.mLogin_User = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.btnAdminPanel = new MetroFramework.Controls.MetroButton();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +85,7 @@
             this.metroLink10.Text = "Канализация";
             this.metroLink10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink10.UseSelectable = true;
+            this.metroLink10.Click += new System.EventHandler(this.metroLink10_Click);
             // 
             // metroLink9
             // 
@@ -95,6 +96,7 @@
             this.metroLink9.Text = "Изоляция";
             this.metroLink9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink9.UseSelectable = true;
+            this.metroLink9.Click += new System.EventHandler(this.metroLink9_Click);
             // 
             // metroLink8
             // 
@@ -105,6 +107,7 @@
             this.metroLink8.Text = "Штукатурки";
             this.metroLink8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink8.UseSelectable = true;
+            this.metroLink8.Click += new System.EventHandler(this.metroLink8_Click);
             // 
             // metroLink7
             // 
@@ -115,6 +118,7 @@
             this.metroLink7.Text = "Цемент";
             this.metroLink7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink7.UseSelectable = true;
+            this.metroLink7.Click += new System.EventHandler(this.metroLink7_Click);
             // 
             // metroLink6
             // 
@@ -125,6 +129,7 @@
             this.metroLink6.Text = "Пены монтажные";
             this.metroLink6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink6.UseSelectable = true;
+            this.metroLink6.Click += new System.EventHandler(this.metroLink6_Click);
             // 
             // metroLink5
             // 
@@ -135,6 +140,7 @@
             this.metroLink5.Text = "Окна";
             this.metroLink5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink5.UseSelectable = true;
+            this.metroLink5.Click += new System.EventHandler(this.metroLink5_Click);
             // 
             // metroLink4
             // 
@@ -145,6 +151,7 @@
             this.metroLink4.Text = "Клеи монтажные";
             this.metroLink4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink4.UseSelectable = true;
+            this.metroLink4.Click += new System.EventHandler(this.metroLink4_Click);
             // 
             // metroLink3
             // 
@@ -155,6 +162,7 @@
             this.metroLink3.Text = "Гипсокартон";
             this.metroLink3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink3.UseSelectable = true;
+            this.metroLink3.Click += new System.EventHandler(this.metroLink3_Click);
             // 
             // metroLink2
             // 
@@ -165,6 +173,7 @@
             this.metroLink2.Text = "Гидроизоляция";
             this.metroLink2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink2.UseSelectable = true;
+            this.metroLink2.Click += new System.EventHandler(this.metroLink2_Click);
             // 
             // metroLink1
             // 
@@ -175,6 +184,7 @@
             this.metroLink1.Text = "Герметики";
             this.metroLink1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink1.UseSelectable = true;
+            this.metroLink1.Click += new System.EventHandler(this.metroLink1_Click);
             // 
             // metroLabel1
             // 
@@ -188,9 +198,10 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(214, 112);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(583, 381);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(605, 381);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // metroPanel2
@@ -208,6 +219,17 @@
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // btnAdminPanel
+            // 
+            this.btnAdminPanel.Location = new System.Drawing.Point(242, 11);
+            this.btnAdminPanel.Name = "btnAdminPanel";
+            this.btnAdminPanel.Size = new System.Drawing.Size(250, 23);
+            this.btnAdminPanel.TabIndex = 4;
+            this.btnAdminPanel.Text = "Панель администратора";
+            this.btnAdminPanel.UseSelectable = true;
+            this.btnAdminPanel.Visible = false;
+            this.btnAdminPanel.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // btnBacket
             // 
@@ -270,17 +292,6 @@
             this.metroLabel3.Size = new System.Drawing.Size(108, 15);
             this.metroLabel3.TabIndex = 4;
             this.metroLabel3.Text = "Имя пользователя:";
-            // 
-            // btnAdminPanel
-            // 
-            this.btnAdminPanel.Location = new System.Drawing.Point(242, 11);
-            this.btnAdminPanel.Name = "btnAdminPanel";
-            this.btnAdminPanel.Size = new System.Drawing.Size(250, 23);
-            this.btnAdminPanel.TabIndex = 4;
-            this.btnAdminPanel.Text = "Панель администратора";
-            this.btnAdminPanel.UseSelectable = true;
-            this.btnAdminPanel.Visible = false;
-            this.btnAdminPanel.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // MainForm
             // 

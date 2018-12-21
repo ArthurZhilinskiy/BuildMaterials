@@ -23,5 +23,19 @@ namespace BuildMaterialsApp
             NewAdminControl newAdminControl = new NewAdminControl(this);
             flowLayoutPanel1.Controls.Add(newAdminControl);
         }
+
+        private void btnAddNewProduct_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            NewProductControl newProductControl = new NewProductControl(this);
+            flowLayoutPanel1.Controls.Add(newProductControl);
+        }
+
+        private void btnChangeProduct_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            ChangeProductsControl newchangeProductsControl = new ChangeProductsControl();
+            flowLayoutPanel1.Controls.Add(newchangeProductsControl);
+        }
     }
 }

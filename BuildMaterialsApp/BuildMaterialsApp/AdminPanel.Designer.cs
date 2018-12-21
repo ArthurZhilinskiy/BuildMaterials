@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btnAddNewProduct = new MetroFramework.Controls.MetroButton();
-            this.btnRemoveProduct = new MetroFramework.Controls.MetroButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddNewAdmin = new MetroFramework.Controls.MetroButton();
             this.btnChangeProduct = new MetroFramework.Controls.MetroButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnRemoveProduct = new MetroFramework.Controls.MetroButton();
+            this.btnAddNewProduct = new MetroFramework.Controls.MetroButton();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,25 +57,14 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // btnAddNewProduct
+            // flowLayoutPanel1
             // 
-            this.btnAddNewProduct.Location = new System.Drawing.Point(67, 19);
-            this.btnAddNewProduct.Name = "btnAddNewProduct";
-            this.btnAddNewProduct.Size = new System.Drawing.Size(135, 23);
-            this.btnAddNewProduct.TabIndex = 2;
-            this.btnAddNewProduct.Text = "Добавить новый товар";
-            this.btnAddNewProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnAddNewProduct.UseSelectable = true;
-            // 
-            // btnRemoveProduct
-            // 
-            this.btnRemoveProduct.Location = new System.Drawing.Point(349, 19);
-            this.btnRemoveProduct.Name = "btnRemoveProduct";
-            this.btnRemoveProduct.Size = new System.Drawing.Size(135, 23);
-            this.btnRemoveProduct.TabIndex = 2;
-            this.btnRemoveProduct.Text = "Удалить товар";
-            this.btnRemoveProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btnRemoveProduct.UseSelectable = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(67, 77);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(417, 280);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
             // btnAddNewAdmin
             // 
@@ -97,15 +86,28 @@
             this.btnChangeProduct.Text = "Изменить товар";
             this.btnChangeProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btnChangeProduct.UseSelectable = true;
+            this.btnChangeProduct.Click += new System.EventHandler(this.btnChangeProduct_Click);
             // 
-            // flowLayoutPanel1
+            // btnRemoveProduct
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(67, 77);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(417, 280);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.btnRemoveProduct.Location = new System.Drawing.Point(349, 19);
+            this.btnRemoveProduct.Name = "btnRemoveProduct";
+            this.btnRemoveProduct.Size = new System.Drawing.Size(135, 23);
+            this.btnRemoveProduct.TabIndex = 2;
+            this.btnRemoveProduct.Text = "Удалить товар";
+            this.btnRemoveProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnRemoveProduct.UseSelectable = true;
+            // 
+            // btnAddNewProduct
+            // 
+            this.btnAddNewProduct.Location = new System.Drawing.Point(67, 19);
+            this.btnAddNewProduct.Name = "btnAddNewProduct";
+            this.btnAddNewProduct.Size = new System.Drawing.Size(135, 23);
+            this.btnAddNewProduct.TabIndex = 2;
+            this.btnAddNewProduct.Text = "Добавить новый товар";
+            this.btnAddNewProduct.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnAddNewProduct.UseSelectable = true;
+            this.btnAddNewProduct.Click += new System.EventHandler(this.btnAddNewProduct_Click);
             // 
             // AdminPanel
             // 
